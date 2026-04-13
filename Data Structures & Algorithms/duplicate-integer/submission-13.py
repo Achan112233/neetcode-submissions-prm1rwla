@@ -1,0 +1,7 @@
+class Solution:
+    def hasDuplicate(self, nums: List[int]) -> bool:
+        count = Counter(nums)
+        for c, v in count.items():
+            if v >= 2:
+                return True
+        return False
